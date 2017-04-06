@@ -6,3 +6,4 @@ Start-Process -Wait -FilePath c:\temp\codedeploy-agent.msi -WindowStyle Hidden
 
 Get-Service | Where-Object {$_.displayname -eq "CodeDeploy"}
 Get-Service | Where-Object {$_.status -eq "running"}
+Stop-Service codedeployagent
